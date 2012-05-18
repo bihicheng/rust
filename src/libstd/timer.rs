@@ -183,6 +183,7 @@ mod test {
     }
 
     #[test]
+    #[cfg(ignore)]
     fn test_gl_timer_recv_timeout_before_time_passes() {
         let expected = rand::rng().gen_str(16u);
         let test_po = comm::port::<str>();
