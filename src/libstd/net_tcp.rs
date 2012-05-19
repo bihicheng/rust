@@ -482,11 +482,13 @@ This function behaves similarly to `comm::peek()`
 
 # Arguments
 
-* `server_port` -- a `net::tcp::tcp_conn_port` representing a server connection
+* `server_port` -- a `net::tcp::tcp_conn_port` representing a server
+  connection
 
 # Returns
 
-`true` if there are one-or-more pending connections, `false` if there are none.
+`true` if there are one-or-more pending connections, `false` if there
+are none.
 "]
 fn conn_peek(server_port: tcp_conn_port) -> bool {
     let new_conn_po = (**server_port).new_conn_po;
